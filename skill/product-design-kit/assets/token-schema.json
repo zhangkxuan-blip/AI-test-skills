@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Design Tokens",
+  "type": "object",
+  "required": ["color", "font", "spacing", "radius"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "properties": {
+        "platform": { "type": "string" },
+        "source": { "type": "array", "items": { "type": "string" } },
+        "generated_at": { "type": "string" },
+        "fallback": { "type": "string" }
+      }
+    },
+    "color": {
+      "type": "object",
+      "required": ["primary", "text", "bg"],
+      "properties": {
+        "primary":   { "type": ["string", "object"] },
+        "secondary": { "type": ["string", "object"] },
+        "text": {
+          "type": "object",
+          "properties": {
+            "1": { "type": "string" },
+            "2": { "type": "string" },
+            "3": { "type": "string" }
+          }
+        },
+        "bg": {
+          "type": "object",
+          "properties": {
+            "1": { "type": "string" },
+            "2": { "type": "string" }
+          }
+        },
+        "border": { "type": "string" },
+        "status": {
+          "type": "object",
+          "properties": {
+            "success": { "type": "string" },
+            "warning": { "type": "string" },
+            "danger":  { "type": "string" },
+            "info":    { "type": "string" }
+          }
+        }
+      }
+    },
+    "font": {
+      "type": "object",
+      "properties": {
+        "family":      { "type": "string" },
+        "size":        { "type": "object" },
+        "weight":      { "type": "object" },
+        "line_height": { "type": "object" }
+      }
+    },
+    "spacing": {
+      "type": "array",
+      "items": { "type": "number" }
+    },
+    "radius": {
+      "type": "object",
+      "properties": {
+        "sm":   { "type": "number" },
+        "md":   { "type": "number" },
+        "lg":   { "type": "number" },
+        "full": { "type": "number" }
+      }
+    },
+    "shadow": {
+      "type": "object",
+      "properties": {
+        "card":   { "type": "string" },
+        "hover":  { "type": "string" },
+        "dialog": { "type": "string" }
+      }
+    },
+    "motion": {
+      "type": "object",
+      "properties": {
+        "duration": { "type": "object" },
+        "easing":   { "type": "string" }
+      }
+    }
+  }
+}

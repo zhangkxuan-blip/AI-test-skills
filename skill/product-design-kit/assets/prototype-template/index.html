@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>原型 · Prototype</title>
+
+  <link rel="stylesheet" href="styles/tokens.css">
+  <link rel="stylesheet" href="styles/app.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary:   'var(--color-primary)',
+            secondary: 'var(--color-secondary)',
+            'text-1':  'var(--color-text-1)',
+            'text-2':  'var(--color-text-2)',
+            'text-3':  'var(--color-text-3)',
+            'bg-1':    'var(--color-bg-1)',
+            'bg-2':    'var(--color-bg-2)',
+            success:   'var(--color-success)',
+            warning:   'var(--color-warning)',
+            danger:    'var(--color-danger)',
+          },
+          borderColor:  { DEFAULT: 'var(--color-border)' },
+          borderRadius: {
+            sm:   'var(--radius-sm)',
+            md:   'var(--radius-md)',
+            lg:   'var(--radius-lg)',
+            full: 'var(--radius-full)',
+          },
+          boxShadow: {
+            card:   'var(--shadow-card)',
+            hover:  'var(--shadow-hover)',
+            dialog: 'var(--shadow-dialog)',
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html, body, iframe { margin: 0; padding: 0; height: 100%; width: 100%; }
+    iframe { border: 0; display: block; }
+  </style>
+</head>
+<body>
+  <iframe id="app-frame" src="pages/home.html"></iframe>
+
+  <script src="scripts/router.js"></script>
+  <script>AppRouter.init('app-frame');</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+/* ============================================================
+ *  Design Tokens (CSS Variables)
+ *  来源：output/design-tokens.json (Step 3 生成)
+ *  改这里 → 全局生效
+ * ============================================================ */
+
+:root {
+  /* ---------- 颜色 ---------- */
+  --color-primary:   #1677FF;
+  --color-secondary: #722ED1;
+
+  --color-text-1: #1F1F1F;
+  --color-text-2: #595959;
+  --color-text-3: #BFBFBF;
+
+  --color-bg-1: #FFFFFF;
+  --color-bg-2: #FAFAFA;
+
+  --color-border: #E5E7EB;
+
+  --color-success: #52C41A;
+  --color-warning: #FAAD14;
+  --color-danger:  #FF4D4F;
+  --color-info:    #1677FF;
+
+  /* ---------- 字体 ---------- */
+  --font-family:    'PingFang SC', system-ui, -apple-system, 'Microsoft YaHei', sans-serif;
+
+  --font-size-xs:   12px;
+  --font-size-sm:   14px;
+  --font-size-base: 16px;
+  --font-size-lg:   18px;
+  --font-size-xl:   24px;
+  --font-size-2xl:  32px;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold:   600;
+
+  --line-height-tight:  1.25;
+  --line-height-normal: 1.5;
+
+  /* ---------- 间距 ---------- */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* ---------- 圆角 ---------- */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   12px;
+  --radius-full: 9999px;
+
+  /* ---------- 阴影 ---------- */
+  --shadow-card:   0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-hover:  0 4px 12px rgba(0, 0, 0, 0.12);
+  --shadow-dialog: 0 8px 32px rgba(0, 0, 0, 0.16);
+
+  /* ---------- 动效 ---------- */
+  --duration-fast: 150ms;
+  --duration-base: 250ms;
+  --duration-slow: 400ms;
+  --easing:        cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 暗色主题（可选） */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text-1: #F5F5F5;
+    --color-text-2: #BFBFBF;
+    --color-text-3: #595959;
+    --color-bg-1:   #141414;
+    --color-bg-2:   #1F1F1F;
+    --color-border: #303030;
+  }
+}

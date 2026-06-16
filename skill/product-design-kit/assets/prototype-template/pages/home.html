@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>首页</title>
+  <link rel="stylesheet" href="../styles/tokens.css">
+  <link rel="stylesheet" href="../styles/app.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { primary:'var(--color-primary)', 'text-1':'var(--color-text-1)', 'text-2':'var(--color-text-2)', 'bg-1':'var(--color-bg-1)', 'bg-2':'var(--color-bg-2)' },
+        borderRadius: { md:'var(--radius-md)', lg:'var(--radius-lg)' },
+        boxShadow: { card:'var(--shadow-card)' }
+      }}
+    }
+  </script>
+</head>
+<body class="bg-bg-2">
+  <main class="app-container">
+    <header class="flex items-center justify-between mb-6">
+      <h1 class="text-xl font-semibold text-text-1">首页 (示例)</h1>
+      <a href="#/list" class="px-4 py-2 bg-primary text-white rounded-md text-sm">查看列表 →</a>
+    </header>
+
+    <section class="grid grid-cols-3 gap-4">
+      <div class="card">
+        <div class="text-text-2 text-sm">指标 1</div>
+        <div class="text-2xl font-bold mt-2 text-text-1">1,234</div>
+      </div>
+      <div class="card">
+        <div class="text-text-2 text-sm">指标 2</div>
+        <div class="text-2xl font-bold mt-2 text-text-1">56%</div>
+      </div>
+      <div class="card">
+        <div class="text-text-2 text-sm">指标 3</div>
+        <div class="text-2xl font-bold mt-2 text-text-1">↑ 12%</div>
+      </div>
+    </section>
+
+    <section class="card mt-6">
+      <h2 class="font-medium text-text-1 mb-3">最近活动</h2>
+      <ul class="divide-y divide-gray-100">
+        <li class="py-3 flex justify-between text-sm">
+          <span class="text-text-1">用户 A 创建了项目</span>
+          <span class="text-text-2">2 分钟前</span>
+        </li>
+        <li class="py-3 flex justify-between text-sm">
+          <span class="text-text-1">用户 B 完成了任务</span>
+          <span class="text-text-2">10 分钟前</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

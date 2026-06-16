@@ -1,0 +1,149 @@
+{
+  "$schema": "./token-schema.json",
+  "meta": {
+    "name": "product-design-kit-default",
+    "description": "基于用户提供的后台设计规范图与 Ant Design 图标体系沉淀的默认设计 Token。",
+    "version": "1.0.0"
+  },
+  "color": {
+    "brand": {
+      "bg": "#EAF5FF",
+      "1": "#B7DCFF",
+      "2": "#7DBAF5",
+      "hover": "#2F7EF7",
+      "normal": "#1764E8",
+      "click": "#0D4EC9"
+    },
+    "primary": "#1764E8",
+    "primary_hover": "#2F7EF7",
+    "primary_active": "#0D4EC9",
+    "primary_bg": "#EBF5FF",
+    "text": {
+      "1": "#1D2531",
+      "2": "#657083",
+      "3": "#9EA7B8",
+      "disabled": "#BFC9D5"
+    },
+    "bg": {
+      "1": "#FFFFFF",
+      "2": "#F7F9FA",
+      "3": "#F2F7FF",
+      "active": "#EBF5FF"
+    },
+    "border": "#E1E7ED",
+    "divider": "#EDF1F5",
+    "status": {
+      "success": "#00B42A",
+      "success_line": "#7BE188",
+      "success_bg": "#E8FFEA",
+      "warning": "#FF8A1F",
+      "warning_line": "#FFCF8B",
+      "warning_bg": "#FFF7E8",
+      "danger": "#F53F3F",
+      "danger_line": "#FF9A9A",
+      "danger_bg": "#FFECE8"
+    },
+    "tag": {
+      "blue": { "text": "#1764E8", "bg": "#EAF5FF", "border": "#B7DCFF" },
+      "cyan": { "text": "#08979C", "bg": "#E6FFFB", "border": "#87E8DE" },
+      "green": { "text": "#00B42A", "bg": "#E8FFEA", "border": "#7BE188" },
+      "lime": { "text": "#7CB305", "bg": "#FCFFE6", "border": "#D3F261" },
+      "yellow": { "text": "#D48806", "bg": "#FFFBE6", "border": "#FFE58F" },
+      "orange": { "text": "#FF8A1F", "bg": "#FFF7E8", "border": "#FFCF8B" },
+      "red": { "text": "#F53F3F", "bg": "#FFECE8", "border": "#FF9A9A" },
+      "gray": { "text": "#657083", "bg": "#F7F9FA", "border": "#E1E7ED" },
+      "pink": { "text": "#D63384", "bg": "#FFF0F6", "border": "#FFADD2" },
+      "purple": { "text": "#722ED1", "bg": "#F9F0FF", "border": "#D3ADF7" }
+    }
+  },
+  "font": {
+    "family": "Microsoft YaHei, PingFang SC, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+    "size": {
+      "caption": 12,
+      "body": 14,
+      "title": 16,
+      "page_title": 24
+    },
+    "weight": {
+      "regular": 400,
+      "bold": 700
+    },
+    "line_height": {
+      "caption": 20,
+      "body": 22,
+      "title": 24,
+      "page_title": 36
+    }
+  },
+  "spacing": [4, 8, 12, 16, 20, 24, 32],
+  "radius": {
+    "xs": 2,
+    "sm": 4,
+    "md": 6,
+    "lg": 8,
+    "full": 9999
+  },
+  "shadow": {
+    "card": "0 2px 8px rgba(29, 37, 49, 0.06)",
+    "hover": "0 4px 12px rgba(29, 37, 49, 0.10)",
+    "dialog": "0 8px 24px rgba(29, 37, 49, 0.14)",
+    "tooltip": "0 2px 8px rgba(29, 37, 49, 0.16)"
+  },
+  "motion": {
+    "duration": {
+      "fast": 120,
+      "base": 180,
+      "slow": 240
+    },
+    "easing": "cubic-bezier(0.2, 0, 0, 1)"
+  },
+  "component": {
+    "button": {
+      "height_sm": 28,
+      "height_md": 32,
+      "padding_x": 12,
+      "radius": 4,
+      "primary_bg": "#1764E8",
+      "primary_hover": "#2F7EF7",
+      "primary_active": "#0D4EC9",
+      "disabled_bg": "#F7F9FA",
+      "disabled_text": "#BFC9D5"
+    },
+    "tree": {
+      "item_height": 28,
+      "indent": 16,
+      "icon_size": 14,
+      "gap_icon_text": 8,
+      "item_radius": 4,
+      "active_bg": "#EBF5FF",
+      "hover_bg": "#F2F7FF"
+    },
+    "tag": {
+      "height": 22,
+      "padding_x": 8,
+      "radius": 2,
+      "gap_icon_text": 4
+    },
+    "alert": {
+      "error_bg": "#FFECE8",
+      "success_bg": "#E8FFEA",
+      "warning_bg": "#FFF7E8",
+      "padding_x": 16,
+      "padding_y": 12
+    },
+    "icon": {
+      "size_xs": 12,
+      "size_sm": 14,
+      "size_md": 16,
+      "size_lg": 20,
+      "size_xl": 24,
+      "color_default": "#657083",
+      "color_weak": "#9EA7B8",
+      "color_disabled": "#BFC9D5",
+      "color_primary": "#1764E8",
+      "color_success": "#00B42A",
+      "color_warning": "#FF8A1F",
+      "color_danger": "#F53F3F"
+    }
+  }
+}

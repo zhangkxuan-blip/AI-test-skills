@@ -1,0 +1,30 @@
+/* 全局基础样式 */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  color: var(--color-text-1);
+  background: var(--color-bg-2);
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--color-primary); text-decoration: none; }
+a:hover { opacity: 0.8; }
+
+/* 滚动条 */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-thumb { background: var(--color-text-3); border-radius: 3px; }
+
+/* 通用工具类（补 Tailwind 之外） */
+.app-container { max-width: 1200px; margin: 0 auto; padding: var(--space-6); }
+.card {
+  background: var(--color-bg-1);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: var(--space-6);
+}
+
+/* 过渡 */
+.transition { transition: all var(--duration-base) var(--easing); }
